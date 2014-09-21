@@ -12,7 +12,8 @@ import "github.com/savaki/openweathermap"
 
 func main() {
 	weatherService := openweathermap.New()
-	forecast, err := weatherService.FindByCity("San Francisco")}
+	forecast, err := weatherService.FindByCity("San Francisco")
+}
 ```
 
 ## Example - Using an API key
@@ -26,7 +27,8 @@ import (
 func main() {
 	apiKey := os.Getenv("API_KEY")
 	weatherService := openweathermap.WithApiKey(apiKey))
-	forecast, err := weatherService.FindByCity("San Francisco")}
+	forecast, err := weatherService.FindByCity("San Francisco")
+}
 ```
 
 ## Example - Using with a Google Context and an (optional) API key
@@ -51,8 +53,9 @@ func main() {
 
 	apiKey := os.Getenv("API_KEY")
 	
-	weatherService := openweathermap.WithContext(ctx, apiKey))
-	forecast, err := weatherService.FindByCity("San Francisco")}
+	weatherService := openweathermap.WithContext(ctx, apiKey)
+	forecast, err := weatherService.FindByCity("San Francisco")
+}
 ```
 
 
