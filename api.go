@@ -17,7 +17,14 @@ type WeatherService interface {
 	ByCityId(id int) (*Forecast, error)
 }
 
-func New(apiKey string) WeatherService {
+func New() WeatherService {
+	return &weatherService{
+		apiKey: "",
+		ctx:    context.Background(),
+	}
+}
+
+func WithApiKey(apiKey string) WeatherService {
 	return &weatherService{
 		apiKey: apiKey,
 		ctx:    context.Background(),
