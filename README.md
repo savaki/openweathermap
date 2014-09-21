@@ -1,8 +1,9 @@
-openweathermap
+openweathermap 
 ==============
 
 Simple Golang client into the [openweathermap](http://openweathermap.org/api) API
 
+[![GoDoc](https://godoc.org/github.com/savaki/openweathermap?status.svg)](https://godoc.org/github.com/savaki/openweathermap)
 
 ## Example - Anonymous Usage
 
